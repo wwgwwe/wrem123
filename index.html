@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Character Sheet Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+  }
+}
+</script>
+<style id="app-theme">
+      :root {
+        --bg-primary: #F3F4F6;
+        --bg-secondary: #FFFFFF;
+        --bg-tertiary: #E5E7EB;
+        --bg-interactive: #D1D5DB;
+        --bg-accent: #3B82F6;
+        --bg-accent-hover: #2563EB;
+        --bg-positive: #22C55E;
+        --bg-positive-hover: #16A34A;
+        --bg-negative: #EF4444;
+        --bg-negative-hover: #DC2626;
+        --bg-info: #6366F1;
+        --bg-info-hover: #4F46E5;
+        --bg-disabled: #E5E7EB;
+        --text-primary: #111827;
+        --text-secondary: #6B7280;
+        --text-accent: #0EA5E9;
+        --text-on-accent: #FFFFFF;
+        --border-primary: #D1D5DB;
+        --border-secondary: #9CA3AF;
+        --border-accent: #60A5FA;
+        --ring-accent: #60A5FA;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[var(--bg-primary)] text-[var(--text-primary)]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
